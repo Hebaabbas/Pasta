@@ -45,3 +45,25 @@ p{
 .item p {
     margin-top: 5px;
 }
+#book h2 {
+    font-size: 24px;
+}
+#book {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+  
+#bookingForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+#bookingForm input,
+#bookingForm button {
+    margin-bottom: 10px;
+}
+
+#cancelButton {
+    margin-left: 10px;
+}
