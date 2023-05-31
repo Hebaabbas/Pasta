@@ -16,3 +16,8 @@ body {
     font-weight: bold;
     margin-top: 10px;
   }
+  .section {
+    padding: 10px;
+    font-size:smaller;
+    margin-bottom: 10px;
+}
