@@ -40,35 +40,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
     // Display booking confirmation message
     alert("Booking confirmed for " + numGuests + " guests on " + bookingDate + " at " + bookingTime + ". You have booked " + numTables + " table(s).");
 
-    // reset
-    document.getElementById("bookingForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-      
-    const bookingDate = document.getElementById("bookingDate").value;
-    const bookingTime = document.getElementById("bookingTime").value;
-    const numGuests = parseInt(document.getElementById("numGuests").value);
-      
-    if (isDoubleBooking(bookingDate, bookingTime)) {
-        alert("Please select a different time, the selected date and time are not available.");
-        return;
-    }
-      
-    const numTables = Math.ceil(numGuests / chairsPerTable);
-      
-    if (bookedTables + numTables <= maxTables) {
-        bookedTables += numTables;
-      
-        const bookingSlot = {
-        date: bookingDate,
-        time: bookingTime
-        };
-        bookedSlots.push(bookingSlot);
-      
-        alert("Booking confirmed for " + numGuests + " guests on " + bookingDate + " at " + bookingTime + ". You have booked " + numTables + " table(s).");
-      
-        document.getElementById("bookingForm").reset();
-    } else {
-        alert("Sorry, there are not enough tables available for your booking. Please try a different date or time.");
-    }
+    document.getElementById("bookingForm").reset();
+} else {
+  alert("Sorry, there are not enough tables available for your booking. Please try a different date or time.");
 }
-      
