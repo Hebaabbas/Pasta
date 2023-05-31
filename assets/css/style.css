@@ -68,10 +68,15 @@ p{
     margin-left: 10px;
 }
 .facebook h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 0;
     color: white;
 }
 #follow{
     text-align: center;
-  }
+}
+#contactUs {
+    text-align: center;
+    padding-bottom: 10%;
+    color: white;
+}
