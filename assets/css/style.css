@@ -23,3 +23,12 @@ body {
     font-size:smaller;
     margin-bottom: 10px;
 }
+.pageMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.pageMenu ul li a {
+    color: white;
+}
