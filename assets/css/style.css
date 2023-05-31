@@ -67,3 +67,11 @@ p{
 #cancelButton {
     margin-left: 10px;
 }
+.facebook h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+    color: white;
+}
+#follow{
+    text-align: center;
+  }
