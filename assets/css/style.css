@@ -32,3 +32,10 @@ body {
 .pageMenu ul li a {
     color: white;
 }
+.menu h2 {
+    font-size: 24px;
+    color: white;
+}
+p{
+    font-size: medium;
+}
