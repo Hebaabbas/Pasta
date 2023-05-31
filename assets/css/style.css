@@ -39,3 +39,9 @@ body {
 p{
     font-size: medium;
 }
+.item {
+    margin-bottom: 30px;
+}
+.item p {
+    margin-top: 5px;
+}
