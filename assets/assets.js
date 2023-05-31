@@ -37,4 +37,12 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
     };
     bookedSlots.push(bookingSlot);
 
+    // Display booking confirmation message
+    alert("Booking confirmed for " + numGuests + " guests on " + bookingDate + " at " + bookingTime + ". You have booked " + numTables + " table(s).");
+
+    // Clear the form
+    document.getElementById("bookingForm").reset();
+
+    // Define a global variable to store the booked slots
+    var bookedSlots = [];
     
