@@ -21,4 +21,20 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
       alert("Please select a different time, the selected date and time are not available.");
       return;
     }
+
+    // Calculate the number of tables required based on the number of guests
+    const numTables = Math.ceil(numGuests / chairsPerTable);
+
+    // Check if there are enough available tables
+    if (bookedTables + numTables <= maxTables) {
+    // Update the bookedTables count
+    bookedTables += numTables;
+
+    // Add the booked date and time to the bookedSlots array
+    const bookingSlot = {
+      date: bookingDate,
+      time: bookingTime
+    };
+    bookedSlots.push(bookingSlot);
+
     
